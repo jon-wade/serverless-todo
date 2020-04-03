@@ -4,7 +4,7 @@
   "description": "A serverless todo application, using DynamoDB with a CLI client",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests -recursive"
+    "test": "mocha test -recursive"
   },
   "keywords": [],
   "author": "Jon Wade",
@@ -16,8 +16,9 @@
     "sinon": "^9.0.1"
   },
   "dependencies": {
-    "aws-sdk": "^2.651.0",
+    "aws-sdk": "^2.653.0",
     "debug": "^4.1.1",
+    "moment": "^2.24.0",
     "uuid": "^7.0.3"
   }
 }

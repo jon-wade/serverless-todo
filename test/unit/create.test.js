@@ -3,9 +3,8 @@
 const chai = require('chai');
 const expect = chai.expect;
 const sinon = require('sinon');
-const dynamoDb = require('../../config/db');
-const createItem = require('../../functions/create.js');
-const deleteItem = require('../../functions/delete.js');
+const dynamoDb = require('../../src/config/db');
+const createItem = require('../../src/functions/create.js');
 
 afterEach(() => {
   sinon.restore();

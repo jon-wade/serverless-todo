@@ -1,0 +1,25 @@
+service: todo-server-layers
+# app and org for use with dashboard.serverless.com
+app: todo-server
+org: jonwade
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+# frameworkVersion: "=X.X.X"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+  # you can overwrite defaults here
+  stage: dev
+  region: eu-west-2
+  cfnRole: arn:aws:iam::194844862910:role/cfnRole
+
+layers:
+  libs:
+    path: ./libs
+    name: libs
+    retain: false
+    compatibleRuntimes:
+      - nodejs12.x
