@@ -1,0 +1,23 @@
+{
+  "name": "serverless-todo",
+  "version": "1.0.0",
+  "description": "A serverless todo application, using DynamoDB with a CLI client",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests -recursive"
+  },
+  "keywords": [],
+  "author": "Jon Wade",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk-mock": "^5.1.0",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "sinon": "^9.0.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.651.0",
+    "debug": "^4.1.1",
+    "uuid": "^7.0.3"
+  }
+}
