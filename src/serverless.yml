@@ -67,6 +67,14 @@ functions:
           path: item/create
           method: post
       - sqs: arn:aws:sqs:eu-west-2:194844862910:todo-server-create
+  update:
+    handler: handler.updateItem
+    layers:
+      - arn:aws:lambda:eu-west-2:194844862910:layer:libs:8
+    events:
+      - http:
+          path: item/update
+          method: put
 
 resources:
   Resources:
