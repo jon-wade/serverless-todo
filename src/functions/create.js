@@ -47,6 +47,7 @@ const createItem = (event, context, callback) => {
       statusCode: 200,
       body: JSON.stringify(params.Item),
     };
+
     callback(null, response);
   });
 };
